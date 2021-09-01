@@ -35,3 +35,7 @@ a:hover{
   border:10px solid rgb(255, 99, 71);
   background-color: pink;
 }
+
+body {
+  background-color: rgb(255, 251, 207);
+}
