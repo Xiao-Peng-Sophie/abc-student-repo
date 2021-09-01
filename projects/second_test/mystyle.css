@@ -28,7 +28,9 @@ a:hover{
 
 .withStroke{
   color:rgb(80,100,200);
-  font-size:130%;
+  font-size:200%;
+  font-weight: bold;
+
   padding:50px;
   border:10px solid rgb(255, 99, 71);
   background-color: pink;
