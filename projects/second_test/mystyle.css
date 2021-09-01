@@ -14,3 +14,13 @@ p{
 h1 mark {
   color:blue;
 }
+
+a:link{
+  color:pink;
+}
+a:visited{
+  color: red;
+}
+a:hover{
+  font-size:130%;
+}
