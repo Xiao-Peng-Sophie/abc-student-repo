@@ -10,3 +10,7 @@ p{
   color:green;
   font-size:200%;
 }
+
+h1 mark {
+  color:blue;
+}
