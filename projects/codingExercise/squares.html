@@ -3,29 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Squares</title>
-
-    <script type="text/javascript">
-
-      function manySquares(){
-        var s=document.getElementById("boxx").value;
-        for(var i=0;i<s;i++){
-          var tempp=document.createElement("div");
-          tempp.className = 'box';
-          document.body.appendChild(tempp);
+    <link rel="stylesheet" href="style.css">
 
 
-        }
-      }
-
-    </script>
   </head>
   <body>
 
-    <p>Enter numbers and click the button!</p>
-    <input type="text" id="boxx">
-    <input type="button" value="More" onclick="manySquares()">
+    <p>Enter a number & Click the button!</p>
+    <input type="text" id="numberInput" style="font-size:14pt;height:30px;width:180px;">
+    <input type="button" value="Draw Squares" onclick="manySquares()" style="font-size:14pt; height:36px;width:135px;">
+    <br><br>
+    <div id="boxContainer">
+
+    </div>
 
 
+
+    <script src="script.js"></script>
   </body>
-
 </html>
