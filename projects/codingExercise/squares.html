@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Squares</title>
+
+    <script type="text/javascript">
+
+      function manySquares(){
+        var s=document.getElementById("boxx").value;
+        for(var i=0;i<s;i++){
+          var tempp=document.createElement("div");
+          tempp.className = 'box';
+          document.body.appendChild(tempp);
+
+
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <p>Enter numbers and click the button!</p>
+    <input type="text" id="boxx">
+    <input type="button" value="More" onclick="manySquares()">
+
+
+  </body>
+
+</html>
