@@ -12,9 +12,10 @@
       function manySquares(){
         var s=document.getElementById("no2").value;
         for(var i=0;i<s;i++){
-          var tempp=document.createElement("BUTTON");
-          var linebreak=document.createElement("P");
-          document.body.appendChild(linebreak);
+          var tempp=document.createElement("div");
+          tempp.className = 'flexContainer';
+          //var linebreak=document.createElement("P");
+          //document.body.appendChild(linebreak);
           document.body.appendChild(tempp);
 
 
@@ -78,8 +79,8 @@
 
     <p>Now try to enter numbers and click the button</p>
     <input type="text" id="no2">
-    <input type="button" value="More Buttons" onclick="manySquares()">
-    <div class="flexContainer">
+    <input type="button" value="More" onclick="manySquares()">
+    <!--- <div class="flexContainer">
     <div >  </div>
     <div >  </div>
     <div >  </div>
@@ -89,5 +90,6 @@
 
 
     </div>
+    --->
 </body>
 </html>
