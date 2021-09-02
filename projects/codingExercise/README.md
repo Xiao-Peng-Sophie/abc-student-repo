@@ -1,3 +1,3 @@
 Hi!
-This is the coding foundation project for ABC browser circus!
+This is Sophie's coding foundation project for ABC browser circus!
 :-)
