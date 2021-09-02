@@ -5,13 +5,21 @@
     <link rel="stylesheet" href="mystyle.css">
 
     <script type="text/javascript">
-      function displaynum(){
-        var n=document.getElementById("no1").value;
-        alert("The number of squares is: "+n);
-            }
+       // function displaynum(){
+       //  var n=document.getElementById("no1").value;
+       //  alert("The number of squares is: "+n);
+      //}
+      function manySquares(){
+        var s=document.getElementById("no2").value;
+        for(var i=0;i<s;i++){
+          var tempp=document.createElement("BUTTON");
+          document.body.appendChild(tempp);
+
+        }
+      }
 
     </script>
-    
+
 </head>
 <body>
     <header>
@@ -62,8 +70,11 @@
   style="fill:red;stroke:black;stroke-width:5;opacity:0.5" >
 </svg>
     <p class="withStroke">Now looks slightly better</p> <br>
-    <input type="text" id="no1"> <br>
-    <input type="button"  value="Draw Squares" onclick="displaynum()">
+    <!---<input type="text" id="no1">
+    <input type="button"  value="Draw Squares" onclick="displaynum()"> --->
 
+    <p>Now try to enter numbers and click the button</p>
+    <input type="text" id="no2">
+    <input type="button" value="More Squeares" onclick="manySquares()">
 </body>
 </html>
