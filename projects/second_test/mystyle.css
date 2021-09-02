@@ -44,6 +44,8 @@ body {
 .flexContainer{
   display: flex;
   background-color: rgb(200,200,50);
+  height:1000px;
+  width:1000px;
 
 }
 .flexContainer >div{
