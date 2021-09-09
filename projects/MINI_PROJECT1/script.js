@@ -18,7 +18,7 @@ let angles=letters.map((l)=>{
   return Math.random()*50;
 })
 let yPositions=letters.map((l)=>{
-  return Math.floor(Math.random()*60);
+  return Math.floor(Math.random()*150);
 })
 words.innerHTML=containers.join(" ");
 let split_words=words.getElementsByTagName("span");
@@ -50,10 +50,10 @@ function changeColor(word,angle,size,y){
   }
 
   if(Math.random()<0.5){
-    y=-y;
+    y=-y*3/2;
   }
   else{
-    y=2*y;
+    y=y/2;
   }
 
   // word.style.color="pink"

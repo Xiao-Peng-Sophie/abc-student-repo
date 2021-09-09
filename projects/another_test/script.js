@@ -10,7 +10,7 @@ let containers=letters.map((l)=>{
 let randomness=letters.map((l)=>{
   return Math.random();
 });
-words.innerHTML=containers.join("");
+words.innerHTML=containers.join(" ");
 let split_words=words.getElementsByTagName("span");
 
 
@@ -24,15 +24,21 @@ control.addEventListener("input",()=>{
     let ls=Number(sliderValue)*Number(randomness[i])+20;
     let c=ls*2;
     let alpha=ls/100;
-
-    split_words[i].style.transform="rotate("+ls+"deg)";//doesn't work even if I change it to a constant
+    split_words[i].style.display="inline-block";
+    split_words[i].style.transform="rotate("+ sliderValue+"deg)";//doesn't work even if I change it to a constant
     split_words[i].style.fontSize=ls+"px";//works
-    split_words[i].style.color= "rgba(0,0,0"+alpha+")";// transparency doesn't work
+    //split_words[i].style.color= "rgba(0,0,0"+alpha+")";// transparency doesn't work
     //"rgba(0,0,0,"+ls/2+")"
 
   }
+  //words.style.transform="rotate("+ sliderValue+"deg)";
+
 
 });
+
+//"rotate("+ls+"deg)"
+
+//words.style.transform="rotate(35deg)";
 
 //words.style.transform="rotate(90deg)";
 // words.addEventListener("mouseover",()=>{
