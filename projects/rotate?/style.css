@@ -1,0 +1,119 @@
+body{
+  background-color: black;
+}
+
+.container{
+  position:relative;
+  text-align: center;
+  left:0px;
+
+}
+.text1{
+  position: absolute;
+  text-align: center;
+  color:orange;
+  font-style: italic;
+  font-size: 10vh;
+  left:10vw;
+  top:40vh;
+}
+/*
+.rectangle{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width: 400px;
+  height:400px;
+  background: black;
+}
+*/
+
+.snake01{
+  transition: transform 1s;
+  position:absolute;
+  width: 15vh;
+  top:35vh;
+  left:38vw;
+
+}
+
+.snake02{
+  transition: transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:35vh;
+  left:82vw;
+}
+
+.snake03{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:16vh;
+  left:44vw;
+}
+
+.snake04{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:16vh;
+  left:76vw;
+}
+
+.snake05{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:1vh;
+  left:54vw;
+}
+
+.snake06{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:1vh;
+  left:66vw;
+}
+
+.snake07{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:55vh;
+  left:44vw;
+}
+
+.snake08{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:55vh;
+  left:76vw;
+}
+
+.snake09{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:69vh;
+  left:54vw;
+}
+
+.snake10{
+  transition:transform 1s;
+
+  position:absolute;
+  width:15vh;
+  top:69vh;
+  left:66vw;
+}
