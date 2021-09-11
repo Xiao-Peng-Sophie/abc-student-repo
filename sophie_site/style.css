@@ -58,11 +58,11 @@ body{
 
 .test{
   transform-origin:  center;
-  
+
 }
 .circle2{
   position: absolute;
-  transition: all 1.3s;
+  
   width:30vh;
   top:28vh;
   left:54.5vw;
