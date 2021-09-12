@@ -1,25 +1,7 @@
-
-
-/*
-h1{
-  text-align: center;
-  top:150px;
-  position: relative;
-  color: white;
-  font-size: 300%;
-  text-shadow: 0px 0px 2px white, 0 0 25px #df3912, 0 0 15px #df3912,0 0 10px #df3912;
-
+@font-face {
+  font-family: firstFont;
+  src:url(joystix.ttf);
 }
-h2{
-  text-align: center;
-  top:300px;
-  position:relative;
-  color:white;
-  font-size: 250%;
-  text-shadow: 0px 0px 2px white, 0 0 25px #df3912, 0 0 15px #df3912,0 0 10px #df3912;
-
-}
-*/
 body{
   background-color: #031621;
 }
@@ -31,29 +13,60 @@ body{
 }
 
 .text1{
+
+  font-family: firstFont;
   position: absolute;
   text-align: left;
   color:white;
-  font-size: 8vh;
-  left:5vw;
-  top:25vh;
-  text-shadow: 0px 0px 2px white, 0 0 25px #df3912, 0 0 15px #df3912,0 0 10px #df3912;
+  font-size: 7.5vh;
+  left:3vw;
+  top:16vh;
+  text-shadow: 0px 0px 2px white, 0 0 25px 	#fc0fe0, 0 0 15px #fc0fe0,0 0 10px 	#fc0fe0;
 }
 
 .text2{
+  font-family: firstFont;
+  line-height: 1.5;
   position: absolute;
   text-align: left;
   color:white;
   font-size: 5vh;
-  left:5vw;
-  top:57vh;
-  text-shadow: 0px 0px 2px white, 0 0 25px #df3912, 0 0 15px #df3912,0 0 10px #df3912;
+  left:3vw;
+  top:52vh;
+  text-shadow: 0px 0px 2px white, 0 0 25px 	#fc0fe0, 0 0 15px #fc0fe0,0 0 10px 	#fc0fe0;
+
 }
+.text3{
+  font-family: firstFont;
+  line-height: 1.5;
+  position: absolute;
+  text-align: left;
+  color:white;
+  font-size: 5vh;
+  left:3vw;
+  top:44vh;
+  text-shadow: 0px 0px 2px white, 0 0 25px 	#0dffff, 0 0 15px #0dffff,0 0 10px 	#0dffff;
+
+}
+
+.title{
+  
+  font-family: firstFont;
+  position: absolute;
+  text-align: left;
+  color:white;
+  font-size: 7vh;
+  left:49vw;
+  top:42vh;
+  text-shadow: 0px 0px 2px white, 0 0 25px 	#0dffff, 0 0 15px #0dffff,0 0 10px 	#0dffff;
+  visibility: hidden;
+}
+
 .circle1{
   position: absolute;
-  width:75vh;
-  top:10vh;
-  left:42vw;
+  width:83vh;
+  top:5vh;
+  left:40vw;
 }
 
 .test{
@@ -62,10 +75,10 @@ body{
 }
 .circle2{
   position: absolute;
-  
-  width:30vh;
+transition: transform 1.3s;
+  width:35vh;
   top:28vh;
-  left:54.5vw;
+  left:53vw;
 }
 .snake01{
   transition: transform 1.3s;
