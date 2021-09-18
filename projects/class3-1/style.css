@@ -1,0 +1,22 @@
+body{
+  background-color: orange;
+  text-align: center;
+}
+
+#button{
+  color:red;
+}
+
+#box{
+  width:100px;
+  height:100px;
+  background: black;
+  margin:auto;
+  margin-top:40px;
+  cursor: pointer;
+  transition:transform 2s;
+}
+
+#button{
+  transition: transform 2s;
+}
