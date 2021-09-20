@@ -3,17 +3,31 @@ let button=document.getElementById('button');
 let end=document.getElementById("end");
 
 let display=document.getElementById("value1");
+let timeText=document.getElementById("time001");
+
 
 let sw=screen.width;
 let sh=screen.height;
 
 function time(){
   let today=new Date();
-  let t=today.getHours() + ":"+today.getMinutes()+":"+today.getSeconds();
-  let timeText=document.getElementById("time001");
+  let h=today.getHours();
+  let m=today.getMinutes();
+  let s=today.getSeconds();
+  if (s<10){
+    s="0"+s;
+  }
+  if (m<10){
+    m="0"+m;
+  }
+  if (h<10){
+    h="0"+h;
+  }
+  let t=h + ":"+m+":"+s;
   timeText.innerHTML=t;
+  setTimeout(function(){time()},1000);
+
 }
-setTimeout('time()',1000);
 
 button.addEventListener("click",open1);
 
@@ -21,7 +35,7 @@ button.addEventListener("click",open1);
 function open1(){
 
  //ends here
-  let controller=window.open("controller","","width=200, height=200,left=800,top=400");
+  let controller=window.open("controller","","width=200, height=200,left=980,top=350");
 
 
   controller.addEventListener("load", ()=>{
@@ -54,6 +68,7 @@ function open1(){
       nose.close();
       leftEye.close();
       rightEye.close();
+      controller.close();
     })
 
 
