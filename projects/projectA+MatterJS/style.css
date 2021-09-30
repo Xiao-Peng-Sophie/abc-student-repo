@@ -1,0 +1,23 @@
+body{
+  overflow: hidden;
+}
+.button1{
+  position: absolute;
+  display:inline-block;
+  left:500px;
+  top:500px;
+}
+
+.button{
+  font-size: 30px;
+  text-decoration: none;
+
+
+  background-color: transparent;
+
+  border: 2px rgba(255,255,255,0);
+}
+.atag{
+  font-size: 30px;
+  color: blue;
+}
