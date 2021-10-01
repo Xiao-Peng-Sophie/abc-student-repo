@@ -1,5 +1,5 @@
 ### Introduction
-![Gravity](gravity.png)
+![Gravity](https://github.com/Xiao-Peng-Sophie/abc-student-repo/blob/master/projects/projectA%2BMatterJS/gravity.png)
 This is a project about gravity. Some random numbers will fall down from the top of the screen which follow the gravity rule and users can control the movement of these numbers by tilting their laptop. And these numbers are anchored with links to different webpages about gravity. Through my project, I want to explore how  websites can cross the boundary between virtual space and the physical world.
 
 ### Challenges & Solutions
