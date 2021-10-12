@@ -1,5 +1,5 @@
 
-let s1=document.getElementById('snake1');
+let s1=document.getElementById('snake1'); //icons
 let s2=document.getElementById('snake2');
 let s3=document.getElementById('snake3');
 let s4=document.getElementById('snake4');
@@ -10,10 +10,13 @@ let s8=document.getElementById('snake8');
 let s9=document.getElementById('snake9');
 let s10=document.getElementById('snake10');
 let c2=document.getElementById("smallCircle");
-let t1=document.getElementById("project1");
+
+
+let t1=document.getElementById("project1");  //project titles
 let t2=document.getElementById("project2");
 let t3=document.getElementById("project3");
 let tA=document.getElementById("projectA");
+let t4=document.getElementById("project4");
 
 s1.addEventListener("mouseover",()=>{
   s1.style.transform="rotateY(180deg) scale(1.2)";
@@ -60,12 +63,16 @@ s4.addEventListener("mouseover",()=>{
 
   s4.style.transform="rotate(30deg) scale(1.2)";
   c2.style.transform="rotate(52deg)";
+  t4.style.visibility="visible";
+
 
 });
 
 s4.addEventListener("mouseout",()=>{
   s4.style.transform="rotate(360deg) scale(1)";
   c2.style.transform="rotate(0deg)";
+  t4.style.visibility="hidden";
+
 
 });
 
@@ -104,11 +111,15 @@ s7.addEventListener("mouseover",()=>{
   s7.style.transform="rotate(360deg) scale(1.2)";
   c2.style.transform="rotate(-128deg)";
 
+
+
 });
 
 s7.addEventListener("mouseout",()=>{
   s7.style.transform="rotate(0deg) scale(1)";
   c2.style.transform="rotate(0deg)";
+
+
 
 });
 
