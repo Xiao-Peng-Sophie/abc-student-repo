@@ -1,0 +1,20 @@
+{
+  "name": "Mirror",
+  "description": "Encrypt the web pages so that you can only read them in a mirror :) ",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "browser_action": {
+     "default_icon": "mirroricon.png",
+    "default_popup":"popup/popup.html"
+
+  }
+}
