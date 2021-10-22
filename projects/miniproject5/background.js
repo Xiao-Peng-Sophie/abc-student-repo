@@ -54,25 +54,7 @@ chrome.tabs.onCreated.addListener((tab)=>{
     })
   }
   console.log(windows);
-
-// ///// test////
-//   for(let i = 0; i < windows.length; i++){
-//     let w = windows[i];
-//     console.log(w.windowId)
-//     let tabs = w.tabs;
-//     for(let j = 0; j<tabs.length; j++){
-//       let tab = tabs[j];
-//       console.log(tab)
-//       // chrome.tabs.executeScript(tab.id, {
-//         // code: `document.title = "LEONLEONLEON"`
-//       //document.title=tab.index；
-//       document.title=tab.index；
-//       // })
-//     }
-//     console.log("------")
-//   }
-//   ////////
-// })
+})
 
 
 function sortWindowTabs(windowId){
@@ -101,6 +83,9 @@ chrome.tabs.onMoved.addListener((tabId, moveInfo)=>{
 // // when last tab and whole window are deleted
 
 
+let letters=["C","L","O","V","E","R"];
+
+let counter = 0;
 setInterval(()=>{
   for(let i = 0; i < windows.length; i++){
     let w = windows[i];
@@ -109,13 +94,33 @@ setInterval(()=>{
     for(let j = 0; j<tabs.length; j++){
       let tab = tabs[j];
       console.log(tab)
+
+      string = ""
+
+
+      for(let g = 0; g<10;g++){
+
+        if((g>=counter-1)&&(g<=counter+1)){
+
+          string+=letters[j%letters.length]+"🎁";
+        }else{
+          string+="☘️";
+        }
+      }
+
       chrome.tabs.executeScript(tab.id, {
-         code: `document.title = "LEONLEONLEON"`
-      //document.title=tab.index；
-    //  code:`document.title = ${tab.index}`
+        code: `document.title = "`+string+`"`
       })
+
+
+
     }
+
+     counter++;
+    if(counter >10){
+      counter = 0;
+    }
+
     console.log("------")
   }
-
-}, 3000);
+}, 500)
