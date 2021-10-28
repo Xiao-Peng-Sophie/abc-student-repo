@@ -18,6 +18,7 @@ let t3=document.getElementById("project3");
 let tA=document.getElementById("projectA");
 let t4=document.getElementById("project4");
 let t5=document.getElementById("project5");
+let tB=document.getElementById("projectB");
 
 
 s1.addEventListener("mouseover",()=>{
@@ -134,12 +135,15 @@ s8.addEventListener("mouseover",()=>{
 
   s8.style.transform="rotate(90deg) scale(1.2)";
   c2.style.transform="rotate(125deg)";
+  tB.style.visibility="visible";
+
 
 });
 
 s8.addEventListener("mouseout",()=>{
   s8.style.transform="rotate(0deg) scale(1)";
   c2.style.transform="rotate(0deg)";
+  tB.style.visibility="hidden";
 
 });
 
