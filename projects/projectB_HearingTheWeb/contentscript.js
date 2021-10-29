@@ -74,7 +74,7 @@ for(let i = 0; i < words.length; i++){
 
 
     console.log("one word:",words[i].innerText);
-
+ 
     let msg={ content:word}
     chrome.runtime.sendMessage(msg,(response)=>{ //send a message, once the message is received, get the resoinse
       console.log("Single word sent!");
