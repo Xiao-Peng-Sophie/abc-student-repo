@@ -74,11 +74,15 @@ body{
   }
 
   32%{
-    transform: translateX(230px);
+
+    transform: translate(230px,500px);
   }
 
   62%{
     transform: translateX(600px) rotate(0deg);
+    transform: translateY(300px);
+
+
   }
 
   72%{

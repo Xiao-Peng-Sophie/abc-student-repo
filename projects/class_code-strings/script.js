@@ -3,6 +3,10 @@ let neirong= document.getElementById("content");
 //let text = contentElement.innerHTML;
 let letters = neirong.innerHTML.split("");
 let letterSpans=letters.map((letter)=>{return "<span>"+letter+"</span>"});
+
+//let letterSpans=letters.map((letter)=>{return "<button>"+letter+"</span>"});
+
+
  neirong.innerHTML=letterSpans.join("");
 let spanTags = neirong.getElementsByTagName("span");
 let randomMultipliers1=letters.map((l)=>{return Math.random()*4});

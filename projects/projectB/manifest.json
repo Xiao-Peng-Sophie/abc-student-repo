@@ -1,0 +1,23 @@
+{
+  "name": "Hearing the Web",
+  "description": "Stop seeing. Hear the web!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tts"
+  ],
+  "content_scripts":[
+    {
+       "matches": ["<all_urls>"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "background":{
+    "scripts":["background.js"]
+  },
+  "browser_action": {
+
+    "default_popup":"popup/popup.html"
+
+  }
+}

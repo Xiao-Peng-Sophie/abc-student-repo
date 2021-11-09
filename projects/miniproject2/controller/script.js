@@ -6,6 +6,7 @@ let sliderN=document.getElementById("nose");
 let sliderLE=document.getElementById("lefteye");
 let sliderRE=document.getElementById("righteye");
 let timetext=document.getElementById("timetext");
+let closewindows=document.getElementById("closewindows");
 
 
 let windows = [];
@@ -64,3 +65,13 @@ sliderLE.addEventListener("input",()=>{
 sliderRE.addEventListener("input",()=>{
   windows[5].sliderChange(sliderRE.value);
 })
+
+// closewindows.addEventListener("click",()=>{
+//   windows[0].close();
+//   windows[1].close();
+//   windows[2].close();
+//   windows[3].close();
+//   windows[4].close();
+//   windows[5].close();
+//
+// })

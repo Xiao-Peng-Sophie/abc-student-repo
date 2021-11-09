@@ -1,0 +1,21 @@
+{
+  "name": "test for tabs",
+  "description": "just a test!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+
+
+  },
+  "background":{
+    "scripts": ["background.js"]
+  },
+  "permissions":[
+    "storage",
+    "idle",
+    "tabs",
+    "activeTab",
+    "*://*/*",
+    "chrome://*"
+  ]
+}

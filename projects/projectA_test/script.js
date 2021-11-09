@@ -25,6 +25,22 @@ let b1=document.getElementById("b1");
 let angle=document.getElementById("angle");
 let distance=document.getElementById("distance");
 
+let words=document.getElementById("content");
+let letters=words.innerHTML.split(" ");
+
+let angles=letters.map((l)=>{
+  return Math.random()*90;
+});
+let ysteps=letters.map((l)=>{
+  return Math.random()*300+50;
+});
+let xsteps=letters.map((l)=>{
+  return Math.random()*(-500)-50;
+});
+
+
+let w=document.getElementById("Aletter");
+
 function setup() {
   //createCanvas(640, 480);
   video = createCapture(VIDEO);
@@ -43,6 +59,24 @@ function setup() {
   // Hide the video element, and just show the canvas
   video.hide();
 }
+let containers=letters.map((l)=>{
+  return "<span>"+l+"</span>";
+
+});
+words.innerHTML=containers.join(" ");
+let split_words=words.getElementsByTagName("span");
+
+function text_move(w,a,y,x){
+  w.style.transform="translateX("+x+"px) translateY("+y+"px) rotate("+a+"deg)";
+
+}
+
+function text_back(w){
+  w.style.transform="translateX(0px) translateY(0px)";
+}
+
+
+
 
 function draw() {
   //background(255)
@@ -82,9 +116,17 @@ function drawKeypoints() {
       box1.style.transform=" rotate(90deg)";
       box3.style.transform="rotate(90deg)";
       b1.style.transform="translateX(-350px) translateY(200px)";
+      w.style.transform="rotate(90deg)";
+
 
     //  text("Flip!",20,90);
       state.innerHTML="flip";
+
+      for(let i=0;i<split_words.length;i+=1){
+        text_back(split_words[i],angles[i]);
+
+      
+      }
     //  box1.style.transform="rotate(90deg)";
 
 
@@ -95,9 +137,14 @@ function drawKeypoints() {
       box1.style.transform=" rotate(0deg)";
       box3.style.transform=" rotate(0deg)";
       b1.style.transform="translateX(0px) translateY(0px)";
+      w.style.transform="rotate(0deg)";
+      for(let i=0;i<split_words.length;i+=1){
+        text_move(split_words[i],angles[i],ysteps[i],xsteps[i]);
+
+      }
 
 
-    //  box1.style.transform="rotate(0deg)";
+
     }
     if (d>120){
       box2.style.transform="scale(1.5)";
@@ -109,12 +156,6 @@ function drawKeypoints() {
       box4.style.transform="scale(1)";
     }
 
-    // if(d>150){
-    //   box1.style.transform="scale(1.5)";
-    // }
-    // else{
-    //   box1.style.transform="scale(1)";
-    // }
 
 
 

@@ -8,9 +8,6 @@ let Rotate=document.getElementById("Rotate0");
 let Translate=document.getElementById("Translate0");
 let More=document.getElementById("More");
 
-
-
-
 let engine = Engine.create();
 
 let render = Render.create({
@@ -47,9 +44,7 @@ let addSquare = function () {
  return Bodies.rectangle(Math.random()*400 + 30, 30, 60, 60);
 };
 
-// var addRect = function () {
-//  return Bodies.rectangle(Math.random()*400 + 30, 30, 100, 60);
-// };
+
 Scale0.addEventListener("click",()=>{
   Matter.Composite.scale( engine.world, 0.5, 0.5, {x: 400, y: 200});
 });
@@ -72,22 +67,3 @@ function moreCircles(){
 }
 
 More.addEventListener("click",moreCircles);
-
-
-
-
-
-
-
-//
-// $('.scale').on('click', function () {
-//     Matter.Composite.scale( engine.world, 0.5, 0.7, {x: 400, y: 200});
-// });
-
-// $('.rotate').on('click', function () {
-//     Matter.Composite.rotate( engine.world, Math.PI/4, {x: 400, y: 200});
-// });
-
-// $('.translate').on('click', function () {
-//     Matter.Composite.translate( engine.world, {x: 10, y: 10});
-// });

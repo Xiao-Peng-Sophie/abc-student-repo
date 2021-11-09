@@ -51,11 +51,8 @@ function changeColor(word,angle,size,y){
   else{
     y=y/2;
   }
-
-
-
     word.style.transform="rotate("+Number(angle)+"deg) translate(0,"+Number(y)*2+"px)";
-  
+
   });
 }
 
