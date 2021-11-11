@@ -19,6 +19,7 @@ let tA=document.getElementById("projectA");
 let t4=document.getElementById("project4");
 let t5=document.getElementById("project5");
 let tB=document.getElementById("projectB");
+let t6=document.getElementById("project6");
 
 
 s1.addEventListener("mouseover",()=>{
@@ -164,11 +165,16 @@ s10.addEventListener("mouseover",()=>{
 
   s10.style.transform=" scale(1.2)";
   c2.style.transform="rotate(155deg)";
+  t6.style.visibility="visible";
+
 
 });
 
 s10.addEventListener("mouseout",()=>{
   s10.style.transform="rotate(0deg) scale(1)";
   c2.style.transform="rotate(0deg)";
+  t6.style.visibility="hidden";
+
+
 
 });
