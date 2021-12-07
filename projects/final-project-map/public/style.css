@@ -54,9 +54,9 @@ z-index: 10000000;
 	/* top:50%;
 	left:50%;
 	transform: translate(-50%,-50%); */
-transform-origin: center;
-	top:35vh;
-	left:40vw;
+/* transform-origin: center; */
+	top:250px;
+	left:550px;
 	/* top:50vh-50px;
 	left:50vw; */
 	border-radius: 350px;
@@ -93,4 +93,8 @@ transform-origin: center;
 
 img{
 	z-index: 10000;
+}
+
+#ring{
+	/* display:none; */
 }

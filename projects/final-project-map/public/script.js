@@ -1,5 +1,9 @@
 window.onscroll = function () { window.scrollTo(0, 0); };
 let ring=document.getElementById("ring");
+let myball=document.getElementById("myball");
+
+
+
 
 
 jQuery(function ($) {
@@ -14,8 +18,11 @@ jQuery(function ($) {
 
 
 
-	let stepX = Math.random() * 1000;
-	let stepY = Math.random()*500;
+	let stepX = Math.random() * 2800;
+	let stepY = Math.random()*1400;
+
+	let soundX=200;
+	let soundY=200;
 
  	// let ballX=Math.random()*1000;
 	// let ballY=Math.random()*500;
@@ -84,7 +91,7 @@ jQuery(function ($) {
 			}
 
 			let peopleimg;
-			peopleimg = '<div class="peopleimg" style="left:200px;top:200px;"><img src = "wholepage.png" width="3000px "/></div>';
+			peopleimg = '<div class="peopleimg" style="left:200px;top:200px;"><img src = "finalmap.png" width="3000px "/></div>';
 
 			$('#zone').append(peopleimg);
 		});
@@ -104,24 +111,27 @@ jQuery(function ($) {
 				'top': data.y
 			}, 200);
 
-			let temp_d=(data.x-stepX)**2+(data.y-stepY)**2;
-            d=Math.sqrt(temp_d);
-	        console.log(d);
+			//let temp_d=(data.x-stepX)**2+(data.y-stepY)**2;
+		// 	let temp_d=(0-stepX)**2+(0-stepY)**2;
+	 //
+   //        d=Math.sqrt(temp_d);
+	 //        console.log(d);
+	 //
+   //   if(d<=250){
+		// 	 console.log("found!");
+		// 	 document.body.style.backgroundColor = "red";
+		//  }
+		// 	let k=200/d;
+		// 	if(k>=0 && k<=1){
+		// 	ring.volume=k;
+	 //
+		//    }
+		// 	 else if(k>1){
+		//  ring.volume=1;
+	 //
+	 // }
 
 
-			let k=50/d;
-			if(k>0 && k<1){
-			ring.volume=50/d;
-
-		   }
-		   else if (k<=0){
-			 ring.volume=0;
-
-		   }
-		   else if(k>=1){
-			ring.volume=1;
-
-		}
 
 			function move_div(x, y)
 			{
@@ -161,14 +171,16 @@ jQuery(function ($) {
 
 
 			$('#zone').animate({
-				'left': 300-x,
-				'top': 300-y
+				'left': 550-x,
+				'top': 250-y
 			}, 200);
 
 		}
 
 
 		function keyDown(e) {
+			// ring.autoplay = true;
+			console.log("stepX:",stepX,"stepY:",stepY);
 			if (e.key == "Right" || e.key == "ArrowRight") {
 				stepX += 50;
 				move_div(stepX, stepY)
@@ -189,6 +201,26 @@ jQuery(function ($) {
 				move_div(stepX, stepY)
 
 			}
+
+			let temp_d=(1600-stepX)**2+(700-stepY)**2;
+
+          d=Math.sqrt(temp_d);
+	        console.log('d:',d);
+
+     if(d<=200){
+			 console.log("found!");
+			 myball.style.backgroundColor = "red";
+			 // document.body.style.backgroundColor = "red";
+		 }
+			let k=200/d;
+			if(k>=0 && k<=1){
+			ring.volume=k;
+
+		   }
+			 else if(k>1){
+		 ring.volume=1;
+
+	 }
 		}
 
 
