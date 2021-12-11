@@ -12,39 +12,43 @@ body{
 
 }
 
+.bigContainer{
+  position: relative;
+}
+
 .text1{
 
   font-family: firstFont;
-  position: absolute;
+  position: relative;
   text-align: left;
   color:white;
-  font-size: 7.5vh;
-  left:3vw;
-  top:16vh;
+  font-size: 50px;
+  left:50px;
+  top:100px;
   text-shadow: 0px 0px 2px white, 0 0 25px 	#fc0fe0, 0 0 15px #fc0fe0,0 0 10px 	#fc0fe0;
 }
 
 .text2{
   font-family: firstFont;
   line-height: 1.5;
-  position: absolute;
+  position: relative;
   text-align: left;
   color:white;
-  font-size: 5vh;
-  left:3vw;
-  top:52vh;
+  font-size: 35px;
+  left:50px;
+  top:135px;
   text-shadow: 0px 0px 2px white, 0 0 25px 	#fc0fe0, 0 0 15px #fc0fe0,0 0 10px 	#fc0fe0;
 
 }
 .text3{
   font-family: firstFont;
   line-height: 1.5;
-  position: absolute;
+  position: relative;
   text-align: left;
   color:white;
-  font-size: 5vh;
-  left:3vw;
-  top:44vh;
+  font-size: 35px;
+  left:50px;
+  top:120px;
   text-shadow: 0px 0px 2px white, 0 0 25px 	#0dffff, 0 0 15px #0dffff,0 0 10px 	#0dffff;
 
 }
@@ -52,10 +56,10 @@ body{
 .title{
 
   font-family: firstFont;
-  position: absolute;
+  position: absolrelativeute;
   text-align: left;
   color:white;
-  font-size: 7vh;
+  font-size: 60px;
   left:49vw;
   top:42vh;
   text-shadow: 0px 0px 2px white, 0 0 25px 	#0dffff, 0 0 15px #0dffff,0 0 10px 	#0dffff;
@@ -64,10 +68,10 @@ body{
 
 
 .circle1{
-  position: absolute;
-  width:83vh;
-  top:5vh;
-  left:40vw;
+  position: relative;
+  width:570px;
+  top:50px;
+  left:50px;
 }
 
 .test{
@@ -75,98 +79,141 @@ body{
 
 }
 .circle2{
-  position: absolute;
+  position: relative;
 transition: transform 1.3s;
-  width:35vh;
-  top:28vh;
-  left:53vw;
+  width:250px;
+  top:-360px;
+  left:215px;
 }
 .snake01{
   transition: transform 1.3s;
-  position:absolute;
-  width: 15vh;
-  top:37vh;
-  left:38vw;
+  position:relative;
+  width: 120px;
+  top:-430px;
+  left:-235px;
 
 }
 
 .snake02{
   transition: transform 1.3s;
 
-  position:absolute;
-  width:15vh;
-  top:37vh;
-  left:79vw;
+  position:relative;
+  /* transform-origin: top right; */
+  width:120px;
+  top:-430px;
+  left:155px;
 }
 
 .snake03{
   transition:transform 1.3s;
 
-  position:absolute;
-  width:15vh;
-  top:14vh;
-  left:43vw;
+  position:relative;
+  width:120px;
+  top:-710px;
+  left:60px;
 }
 
 .snake04{
   transition:transform 1.3s;
 
-  position:absolute;
-  width:15vh;
-  top:17vh;
-  left:74.5vw;
+  position:relative;
+  width:120px;
+  top:-725px;
+  left:360px;
 }
 
 .snake05{
   transition:transform 1.3s;
 
-  position:absolute;
-  width:15vh;
-  top:3vh;
-  left:54vw;
+  position:relative;
+  width:120px;
+  top:-830px;
+  left:-70px;
 }
 
 .snake06{
   transition:transform 1s;
 
-  position:absolute;
-  width:15vh;
-  top:3vh;
-  left:66vw;
+  position:relative;
+  width:120px;
+  top:-810px;
+  left:-10px;
 }
 
 .snake07{
   transition:transform 1.3s;
 
-  position:absolute;
-  width:15vh;
-  top:61vh;
-  left:41vw;
+  position:relative;
+  width:130px;
+  top:-590px;
+  left:55px;
 }
 
 .snake08{
   transition:transform 1s;
 
-  position:absolute;
-  width:15vh;
-  top:58vh;
-  left:76.5vw;
+  position:relative;
+  width:120px;
+  top:-585px;
+  left:360px;
 }
 
 .snake09{
   transition:transform 1.3s;
 
-  position:absolute;
-  width:15vh;
-  top:75vh;
-  left:53vw;
+  position:relative;
+  width:120px;
+  top:-480px;
+  left:-80px;
 }
 
 .snake10{
   transition:transform 1s;
 
-  position:absolute;
-  width:15vh;
-  top:74vh;
-  left:66vw;
+  position:relative;
+  width:120px;
+  top:-480px;
+  left:-10px;
+}
+
+.flex-container {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+
+  padding: 5px;
+  width: 600px;
+  height: 600px;
+  margin-top: 0px;
+
+}
+
+.flex-item-2 {
+
+  padding: 5px;
+  width: 440px;
+  height: 600px;
+  margin-top: 0px;
+
+}
+
+
+.title{
+
+  font-family: firstFont;
+  position: relative;
+  text-align: left;
+  color:white;
+  font-size: 50px;
+  left:150px;
+  top:-820px;
+  text-shadow: 0px 0px 2px white, 0 0 25px 	#0dffff, 0 0 15px #0dffff,0 0 10px 	#0dffff;
+  visibility: hidden;
 }
